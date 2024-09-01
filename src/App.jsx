@@ -24,10 +24,10 @@ export default function App() {
   return (
     <div>
       <h1 className="header">Phonebook</h1>
-      {isLoading && <Loader />}
-      {isError && <ErrorMessage />}
       <ContactForm />
       <SearchBox />
+      {isLoading && <Loader />}
+      {isError && <ErrorMessage />}
       <ContactList />
     </div>
   );

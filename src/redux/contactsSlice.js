@@ -56,7 +56,7 @@ export const selectVisibleContacts = createSelector(
   (contacts, contactFilter) => {
     console.log("Contacts:", contacts);
     if (!Array.isArray(contacts)) {
-      return []; // Повертаємо пустий масив, якщо contacts не є масивом
+      return [];
     }
     return contacts.filter((contact) =>
       contact.name.toLowerCase().includes(contactFilter.toLowerCase())
